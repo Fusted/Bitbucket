@@ -2,7 +2,8 @@
 @import url('./reset.scss');
 
 $main: #faf9f7;
-$item-color: #FFFEFB;
+$secondary: #FFFEFB;
+
 
 body {
     background: $main;
@@ -23,28 +24,32 @@ body {
 
 .main {
     display: grid;
-    grid-template-columns: 332px 1fr;
+    grid-template-columns: 1fr 3fr;
     gap: 16px;
 }
 
 
 .main__side {
     min-height: 300px;
-    // border: 2px solid black;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
+
+    .left {
+        padding: 24px;
+        background-color: $secondary;
+        
+    }
 }
 
-.main__sile--left {
-    padding: 24px;
-    background-color: $item-color;
-}
+
+
 
 .main__item {
     // border: 1px solid black;
     border-radius: 4px 4px 0px 0px;
-    background-color: $item-color;
+    background-color: $secondary;
 
     img {
         width: 100%;
@@ -68,26 +73,61 @@ body {
 /* form */
 
 .form {
+    padding: 24px;
     display: block;
-    min-width: 100%;
+    width: 100%;
+    background-color: $secondary;
 }
 
 input {
-    width: 248px;
+    width: 100%;
     margin-bottom: 16px;
+    padding: 10px 0px 11px 16px;
+    border: 0;
+    background: $secondary;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
 
 label {
-    font-size: 10px;
-    line-height: 13px;
-    letter-spacing: -0.02em;
     margin-bottom: 4px;
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+    
+        background: #FF8484;
+        border-radius: 4px;
+    
+        position: absolute;
+        top: 0;
+        right: -4px;
+    }
 }
+
+
+
 
 .field {
     border: 0;
+    padding: 0;
+
+    .desc {
+        height: 108px;
+    }
 }
 
+.btn {
+    background: #EEEEEE;
+    border-radius: 10px;
+    border: 0;
+    width: 100%;
+    padding: 10px 0 11px 0;
+    margin-top: 8px;
 
+    
+}
 
 /* adaptive */

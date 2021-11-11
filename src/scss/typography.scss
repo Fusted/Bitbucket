@@ -5,7 +5,8 @@ $background: #E5E5E5;
 $main: #FFFEFB;
 $text: #3F3F3F;
 $text--grey: #B4B4B4;
-$title-padding: 3em;
+$grey: #B4B4B4;
+$black: #3F3F3F;
 
 body {
     font-family: $base-font;
@@ -26,4 +27,37 @@ h2 {
 p {
     font-size: 16px;
     line-height: 20px;
+}
+
+
+input {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+input::placeholder {
+    font-family: $base-font;
+    font-size: 12px;
+    line-height: 15px;
+    color: $grey;
+}
+
+
+label {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+    color: $black;
+}
+
+button {
+    font-family: $base-font;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #B4B4B4;
 }
