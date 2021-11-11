@@ -92,7 +92,11 @@ input {
 label {
     margin-bottom: 4px;
     position: relative;
-    &:after {
+}
+
+
+.important {
+    &::after {
         content: "";
         display: block;
         width: 4px;
@@ -106,8 +110,6 @@ label {
         right: -4px;
     }
 }
-
-
 
 
 .field {
