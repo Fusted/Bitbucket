@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+$base-font: 'Source Sans Pro', sans-serif;
+$background: #E5E5E5;
+$main: #FFFEFB;
+$text: #3F3F3F;
+$text--grey: #B4B4B4;
+$title-padding: 3em;
+
+body {
+    font-family: $base-font;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 20px;
+}

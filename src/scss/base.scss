@@ -1,0 +1,93 @@
+@import url('./typography.scss');
+@import url('./reset.scss');
+
+$main: #faf9f7;
+$item-color: #FFFEFB;
+
+body {
+    background: $main;
+    padding: 32px;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+
+
+/* */
+
+.main {
+    display: grid;
+    grid-template-columns: 332px 1fr;
+    gap: 16px;
+}
+
+
+.main__side {
+    min-height: 300px;
+    // border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.main__sile--left {
+    padding: 24px;
+    background-color: $item-color;
+}
+
+.main__item {
+    // border: 1px solid black;
+    border-radius: 4px 4px 0px 0px;
+    background-color: $item-color;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.text__wrapper {
+    padding: 16px 16px 24px 16px;
+
+    .price {
+        margin-top: 32px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+
+
+/* form */
+
+.form {
+    display: block;
+    min-width: 100%;
+}
+
+input {
+    width: 248px;
+    margin-bottom: 16px;
+}
+
+label {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+}
+
+.field {
+    border: 0;
+}
+
+
+
+/* adaptive */
