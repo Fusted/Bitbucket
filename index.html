@@ -17,76 +17,36 @@
     <!-- main -->
 
     <main class="main">
-        <div class="main__sile--left">
+        <div class="left">
+            <!-- form -->
             <form class='form' action="#">
                 <fieldset class='field'>
-                    <label class='important' for="product">Наименование товара</label>
-                    <input type="text" name="prodduct" placeholder="Введите Наименование товара">
+                    <label  for="product">Наименование товара</label>
+                    <input class='important' data-form='name' type="text" name="prodduct" placeholder="Введите Наименование товара">
                 </fieldset>
 
                 <fieldset class='field'>
                     <label for="description">Описание товара</label>
-                    <input class='desc' type="text" name="description" placeholder="Логин">
+                    <input data-form='desc' class='desc' type="text" name="description" placeholder="Введите описание товара">
                 </fieldset>
 
                 <fieldset class='field'>
-                    <label class='important' for="image">Наименование товара</label>
-                    <input type="text" name="image" placeholder="Введите ссылку">
+                    <label  for="image">Наименование товара</label>
+                    <input class='important' data-form='img' type="text" name="image" placeholder="Введите ссылку">
                 </fieldset>
 
                 <fieldset class='field'>
-                    <label class='important' for="price">Цена товара</label>
-                    <input type="text" name="price" placeholder="Введите цену">
+                    <label  for="price">Цена товара</label>
+                    <input class='important' data-form='price' type="text" name="price" placeholder="Введите цену">
                 </fieldset>
 
-                <button class="btn">Добавить товар</button>
+                <button type='submit' class="btn">Добавить товар</button>
             </form>
         </div>
 
 
         <div class="main__side">
-            <div class="main__item">
-                <img src="./src/img/photo.jpg" alt="photo">
-                <div class='text__wrapper'>
-                    <h2>Наименование товара</h2>
-                    <p>
-                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк
-                    </p>
-                    <div class="price">10 000 руб.</div>
-                </div>
-            </div>
-            <div class="main__item">
-                <img src="./src/img/photo.jpg" alt="photo">
-                <div class='text__wrapper'>
-                    <h2>Наименование товара</h2>
-                    <p>
-                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк
-                    </p>
-                    <div class="price">10 000 руб.</div>
-                </div>
-            </div>
-            <div class="main__item">
-                <img src="./src/img/photo.jpg" alt="photo">
-                <div class='text__wrapper'>
-                    <h2>Наименование товара</h2>
-                    <p>
-                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк
-                    </p>
-                    <div class="price">10 000 руб.</div>
-                </div>
-            </div>
-            <div class="main__item">
-                <img src="./src/img/photo.jpg" alt="photo">
-                <div class='text__wrapper'>
-                    <h2>Наименование товара</h2>
-                    <p>
-                        Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк
-                    </p>
-                    <div class="price">10 000 руб.</div>
-                </div>
-            </div>
-            
-            
+            <!-- cards -->
         </div>    
     </main>
 

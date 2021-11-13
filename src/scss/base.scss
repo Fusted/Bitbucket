@@ -1,9 +1,11 @@
 @import url('./typography.scss');
 @import url('./reset.scss');
 
+
 $main: #faf9f7;
 $secondary: #FFFEFB;
-
+$error: #ef8a87;
+$sucsess: #86ac79;
 
 body {
     background: $main;
@@ -26,6 +28,17 @@ body {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 16px;
+    @media screen and (max-width: 1070px) {
+        grid-template-columns: 2fr 5fr; 
+    }
+
+    @media screen and (max-width: 930px) {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    @media screen and (max-width: 560px) {
+        grid-template-columns: 1fr; 
+    }
 }
 
 
@@ -36,10 +49,18 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
 
+    @media screen and (max-width: 1070px) {
+        min-height: 300px;
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    @media screen and (max-width: 930px) {
+        min-height: 300px;
+        grid-template-columns: 1fr; 
+    }
     .left {
         padding: 24px;
         background-color: $secondary;
-        
     }
 }
 
@@ -79,7 +100,7 @@ body {
     background-color: $secondary;
 }
 
-input {
+input, textarea {
     width: 100%;
     margin-bottom: 16px;
     padding: 10px 0px 11px 16px;
@@ -87,7 +108,15 @@ input {
     background: $secondary;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+    position: relative;
+    transition: border-color .2s linear;
+    &::placeholder {
+        position: absolute;
+        top: 0;
+    }
 }
+
+
 
 label {
     margin-bottom: 4px;
@@ -119,6 +148,14 @@ label {
     .desc {
         height: 108px;
     }
+}
+
+.not-filled {
+    border: 1px solid $error;
+}
+
+.filled {
+    border: 1px solid $sucsess;
 }
 
 .btn {
