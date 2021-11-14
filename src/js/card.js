@@ -1,10 +1,14 @@
-function transformCards(img, title, description, price, id){
+import { pushCard } from "./service"
+
+const itemsWrapper = document.querySelector('.main__side')
+
+function transformCards(img, title, desc, price, id){
     return `
     <div id='${id}' class="main__item">
         <img src="${img}" alt="${title}">
         <div class='text__wrapper'>
             <h2>${title}</h2>
-            <p>${description}</p>
+            <p>${desc}</p>
             <div class="price">${price} руб.</div>
         </div>
     </div>
@@ -13,13 +17,23 @@ function transformCards(img, title, description, price, id){
 
 
 function addCrads(cardList) {
-    const itemsWrapper = document.querySelector('.main__side')
+    
     
     cardList.forEach(item => {
-        const {img, title, description, price, id} = item
-        itemsWrapper.innerHTML += transformCards(img, title, description, price, id)
+        const {img, title, desc, price, id} = item
+        itemsWrapper.innerHTML += transformCards(img, title, desc, price, id)
     })
 }
 
+function removeCards(){
+    itemsWrapper.innerHTML = ''
+}
 
-export  {addCrads, transformCards}
+function addCard(card){
+    const {img, title, desc, price, id} = card
+    itemsWrapper.innerHTML += transformCards(img, title, desc, price, id)
+    pushCard(card, 'http://localhost:3000/cards')
+}
+
+
+export  {addCrads, transformCards, addCard}
