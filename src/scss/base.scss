@@ -54,7 +54,7 @@ body {
         grid-template-columns: 1fr 1fr; 
     }
 
-    @media screen and (max-width: 930px) {
+    @media screen and (max-width: 830px) {
         min-height: 300px;
         grid-template-columns: 1fr; 
     }
@@ -112,8 +112,11 @@ input, textarea {
     transition: border-color .2s linear;
     &::placeholder {
         position: absolute;
-        top: 0;
+        top: 10px;
     }
+    // &:focus {
+    //     border: 1px solid $sucsess;
+    // }
 }
 
 
@@ -123,8 +126,7 @@ label {
     position: relative;
 }
 
-
-.important {
+.important label {
     &::after {
         content: "";
         display: block;
@@ -142,6 +144,7 @@ label {
 
 
 .field {
+    position: relative;
     border: 0;
     padding: 0;
 
@@ -151,8 +154,23 @@ label {
 }
 
 .not-filled {
-    border: 1px solid $error;
+    .important-wrapper::before {
+        display: block;
+        content: "Поле является обязательным";
+        font-size: 8px;
+        line-height: 10px;
+        letter-spacing: -0.02em;
+        color: $error;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    input {
+        border: 1px solid $error;
+    }    
 }
+
 
 .filled {
     border: 1px solid $sucsess;
@@ -165,8 +183,11 @@ label {
     width: 100%;
     padding: 10px 0 11px 0;
     margin-top: 8px;
+}
 
-    
+.btn-active {
+    background-color: $sucsess;
+    color: #fff;
 }
 
 /* adaptive */
