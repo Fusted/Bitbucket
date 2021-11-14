@@ -1,10 +1,21 @@
+import { InputMask } from 'imask'
 import {addCard} from './card'
+import { Imask } from 'imask'
+
 
 function addForm(){
     const inputs = document.querySelectorAll('.important')
     const form = document.querySelector('.form')
     const btn = document.querySelector('.btn')
 
+    let numberMask = IMask(
+        document.querySelector('[data-form=price]'),
+        {
+          mask: Number,
+          min: -1000000,
+          max: 10000000,
+          thousandsSeparator: ' '
+        });
 
     form.addEventListener('change', () => {
         const notFilled = []
