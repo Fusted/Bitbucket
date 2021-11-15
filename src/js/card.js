@@ -37,4 +37,4 @@ function addCard(card){
 }
 
 
-export  {addCrads, transformCards, addCard}
+export  {addCrads, transformCards, addCard, removeCards}

@@ -11,7 +11,16 @@
     <!-- header -->
     <header class="header">
         <div class="header__item"><h1>Добавление товара</h1></div>
-        <div class="header__item">По умолчанию</div>
+        <div class="header__item">
+            <div class='select--wrapper'>
+                <select class='select' name="sort" id="sort">
+                    <option value="default">По умолчанию</option>
+                    <option value="minmaxprice">По цене от min к max</option>
+                    <option value="maxminprice">По цене от max к мин</option>
+                    <option value="title">По названию</option>
+                </select>
+            </div>
+        </div>
     </header>
 
     <!-- main -->

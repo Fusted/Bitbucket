@@ -2,24 +2,31 @@
   "cards": [
     {
       "img": "src/img/photo.jpg",
-      "title": "Наименование товара",
-      "desc": "Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк",
-      "price": "10 000",
-      "id": 1
-    },
-    {
-      "img": "src/img/photo.jpg",
-      "title": "Наименование товара",
-      "desc": "Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк",
-      "price": "10 000",
-      "id": 2
+      "title": "title",
+      "desc": "Some description",
+      "price": "12 000",
+      "id": "6618832"
     },
     {
       "img": "src/img/photo.jpg",
       "title": "title",
       "desc": "Some description",
       "price": "12 000",
-      "id": "341542"
+      "id": "661483"
+    },
+    {
+      "img": "src/img/photo.jpg",
+      "title": "title",
+      "desc": "Some description",
+      "price": "12 000",
+      "id": "66383"
+    },
+    {
+      "img": "src/img/photo.jpg",
+      "title": "title",
+      "desc": "Some description",
+      "price": "12 000",
+      "id": "66483"
     }
   ]
 }
