@@ -1,0 +1,99 @@
+$secondary: #FFFEFB;
+$error: #ef8a87;
+$sucsess: #86ac79;
+
+
+.form {
+    padding: 24px;
+    display: block;
+    width: 100%;
+    background-color: $secondary;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 10px 0px 11px 16px;
+    border: 0;
+    background: $secondary;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    position: relative;
+    transition: border-color .2s linear;
+    &::placeholder {
+        position: absolute;
+        top: 10px;
+    }
+}
+
+
+
+label {
+    margin-bottom: 4px;
+    position: relative;
+}
+
+.important label {
+    &::after {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+    
+        background: #FF8484;
+        border-radius: 4px;
+    
+        position: absolute;
+        top: 0;
+        right: -4px;
+    }
+}
+
+
+.field {
+    position: relative;
+    border: 0;
+    padding: 0;
+
+    .desc {
+        height: 108px;
+    }
+}
+
+.not-filled {
+    .important-wrapper::before {
+        display: block;
+        content: "Поле является обязательным";
+        font-size: 8px;
+        line-height: 10px;
+        letter-spacing: -0.02em;
+        color: $error;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    input {
+        border: 1px solid $error;
+    }    
+}
+
+
+.filled {
+    border: 1px solid $sucsess;
+}
+
+.btn {
+    background: #EEEEEE;
+    border-radius: 10px;
+    border: 0;
+    width: 100%;
+    padding: 10px 0 11px 0;
+    margin-top: 8px;
+}
+
+.btn-active {
+    background-color: $sucsess;
+    color: #fff;
+}
+

@@ -1,5 +1,12 @@
-import './scss/base.scss'
+import './scss/reset.scss'
+import './scss/style.scss'
+import './scss/header.scss'
 import './scss/typography.scss'
+import './scss/__const.scss'
+import './scss/form.scss'
+import './scss/main.scss'
+
+
 import {addCrads, transformCards} from './js/card'
 import './js/addForm'
 import deleteCard from './js/deleteCard'
