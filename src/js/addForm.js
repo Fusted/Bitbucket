@@ -71,7 +71,7 @@ function addForm(){
                 title: document.querySelector('[data-form=title]').value,
                 desc: document.querySelector('[data-form=desc]').value,
                 price: document.querySelector('[data-form=price]').value,
-                id: `${Math.floor(Math.random() * (1000000 - 100000)) + 10000}${document.querySelector('[data-form=title]').value}`,
+                id: `${Math.floor(Math.random() * (1000000 - 100000)) + 10000}`,
             }
             form.reset()
             document.querySelectorAll('.filled').forEach(item => item.classList.remove('filled'))

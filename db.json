@@ -15,39 +15,11 @@
       "id": 2
     },
     {
-      "img": "https://www.fonstola.ru/download.php?file=201112/1440x900/fonstola.ru-63562.jpg",
+      "img": "src/img/photo.jpg",
       "title": "title",
       "desc": "Some description",
-      "price": "12 000",
-      "id": "526525title"
-    },
-    {
-      "img": "https://www.fonstola.ru/download.php?file=201112/1440x900/fonstola.ru-63562.jpg",
-      "title": "title",
-      "desc": "Some description",
-      "price": "12 000",
-      "id": "428378title"
-    },
-    {
-      "img": "https://www.fonstola.ru/download.php?file=201112/1440x900/fonstola.ru-63562.jpg",
-      "title": "title",
-      "desc": "Some description",
-      "price": "12 000",
-      "id": "230142title"
-    },
-    {
-      "img": "https://www.fonstola.ru/download.php?file=201112/1440x900/fonstola.ru-63562.jpg",
-      "title": "title",
-      "desc": "",
-      "price": "12 000",
-      "id": "647692title"
-    },
-    {
-      "img": "https://www.fonstola.ru/download.php?file=201112/1440x900/fonstola.ru-63562.jpg",
-      "title": "title",
-      "desc": "Some description",
-      "price": "12 000",
-      "id": "732425title"
+      "price": "12 000",
+      "id": "341542"
     }
   ]
 }

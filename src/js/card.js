@@ -6,6 +6,7 @@ function transformCards(img, title, desc, price, id){
     return `
     <div id='${id}' class="main__item">
         <img src="${img}" alt="${title}">
+        <span class='trash'></span>
         <div class='text__wrapper'>
             <h2>${title}</h2>
             <p>${desc}</p>
