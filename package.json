@@ -4,9 +4,9 @@
   "desc": "test case for idaproject",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch db.json",
     "build": "webpack",
-    "start": "webpack --watch"
+    "start": "webpack --watch && json-server --watch db.json"
   },
   "author": "",
   "license": "ISC",
