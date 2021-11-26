@@ -1,8 +1,7 @@
 # Testcase for Idaproject
 
 # Запуск
-- npm i
-- json-server --watch db.json
-- npm run-script start
+- `npm i`
+- `npm start`
 
 Для хранения карточек используется json файл
